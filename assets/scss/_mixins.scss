@@ -1,1 +1,50 @@
 // Mixins
+
+@mixin h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $white;
+    line-height: 3.5rem;
+    position: absolute;
+    top: 228px;
+    right: 139px;
+}
+
+@mixin button {
+    background: $red;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+}
+
+@mixin buttonText {
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: -0.03em;
+    color: $white;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+@mixin ticketButton {
+    border-radius: 0;
+    background-color: $white;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    border:unset;
+    span {
+        background-color: $dark-blue;
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -3%;
+    }
+}

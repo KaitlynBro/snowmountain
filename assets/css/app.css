@@ -4,6 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10787,4 +10788,204 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 3.5rem;
+  position: absolute;
+  top: 228px;
+  right: 139px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.text-large {
+  font-size: 1.125rem;
+}
+
+.text-medium {
+  font-size: 1rem;
+}
+
+.text-small {
+  font-size: 0.875rem;
+}
+
+.button {
+  background: #FF0000;
+  border-radius: 100px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 200px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.nav.secondary-nav {
+  background-color: #00478F;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.nav.secondary-nav img.phone {
+  width: 25px;
+  height: 25px;
+}
+
+.nav.primary-nav {
+  background-color: #CBEBF5;
+  height: 150px;
+}
+
+.nav.primary-nav a.nav-link {
+  color: #00478F;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5%;
+  line-height: 21.6px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero {
+  background-image: url("../img/andrew-hughes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.hero .hero-bar {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #00478F;
+  border-radius: 100px 0 0 100px;
+  height: 165px;
+  -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
+  width: 400px;
+}
+
+.hero .hero-bar .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  height: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-bar .col:not(:last-child) {
+  padding: 0 20px;
+}
+
+.hero .hero-bar .col.divider {
+  border-right: 1px solid #fff;
+}
+
+.hero .hero-bar .col img {
+  width: 55px;
+  height: 55px;
+}
+
+.hero .hero-bar .col p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.dining-block {
+  height: 500px;
+}
+
+.dining-block img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tickets-block button.ticket {
+  border-radius: 0;
+  background-color: #fff;
+  color: #00478F;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  border: unset;
+}
+
+.tickets-block button.ticket span {
+  background-color: #00478F;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -3%;
 }

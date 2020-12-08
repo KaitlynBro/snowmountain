@@ -6,9 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-
-    <title>Bootstrap Statssser</title>
-
+    <title>Snow Mountain</title>
     <!-- Icons for this template -->
     <link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- Stylesheet -->
@@ -16,65 +14,310 @@
     <link href="assets/css/app.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
-
 <body>
+  <ul class="nav secondary-nav d-flex">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-small text-xl-medium d-flex align-items-center">
+          <img src="assets/img/phone.svg" class="phone mr-2"/>
+            905 - 674 - 9999
+        </div>
+        <div class="col-sm col-lg-6 text-small text-xl-medium d-flex align-items-center justify-content-center">
+          <img src="assets/img/covid.svg" class="mr-2"/>
+            Covid Information
+        </div>
+        <div class="col d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 text-small text-xl-medium d-flex align-items-center justify-content-end">
+                Hours
+              </div>
+              <div class="col-4 text-small text-xl-medium d-flex align-items-center justify-content-end">
+                Contact
+              </div>
+              <div class="col-4 text-small text-xl-medium d-flex align-items-center justify-content-end">
+                <img src="assets/img/sun.svg" class="mr-xl-2"/>
+                  -10
+                  <img src="assets/img/degree.svg" class="mb-2"/>
+                  C                                     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+  <ul class="nav primary-nav d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+            <img src="assets/img/snowmountainLogo.svg"/>       
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active text-large" href="#">Tickets/Passes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-large" href="#">Rentals/Lessons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-large" href="#">Dining/Resort</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col d-flex align-items-center justify-content-end">
+          <button type="button" class="button">Season Passes</button>
+        </div>
+      </div>
+    </div>
+  </ul>
+  <!-- hero -->
+  <div class="container-fluid hero">
+    <div class="row no-gutters">
+      <h1>Do something <br> fun this winter</h1>
+    </div>
+    <div class="hero-bar">
+      <div class="col divider">
+        <img src="assets/img/snowflake.svg"/>
+        <p class="text-small">Conditions</p>
+        
+      </div>
+      
+      <div class="col divider">
+        <img src="assets/img/Map.svg"/>
+        <p class="text-small">Trail Maps</p>
+      </div>
+      <div class="col">
+        <img src="assets/img/phone.svg"/>
+        <p class="text-small">Contact</p>
+      </div>
+    </div>
+  </div>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+  <!-- hero -->
+
+  <!-- dining block -->
+  <!-- <div class="container-fluid p-0">
+    <div class="dining-block row d-flex no-gutters">
+      <div class="col">
+        <img src="assets/img/dining-img.jpg"/>
+      </div>
+      <div class="col">
+        <h2>Enjoy fine dining while overlooking the mountains</h2>
+        <p class="text-large">Bacon ipsum dolor amet cillum quis turducken tri-tip chuck leberkas lorem excepteur officia ad et capicola short loin in. Velit occaecat andouille </p>
+        <button type="button" class="button">See menu</button>
+      </div>
+    </div>
+  </div> -->
+  <!-- dining block -->
+
+  <!-- tickets block -->
+  <!-- <div class="container-fluid p-0">
+    <div class="tickets-block row d-flex no-gutters">
+      <div class="col-10">
+        <h6>Seasonal & Day</h6>
+        <h2>Passes</h2>
+        <p class="text-large">Check out our variety of Seasonal and Day passes to find what works best for you</p>
+      </div>
+      <div class="col-2">
+        <img src="assets/img/snowflakes.svg"/>
+      </div>
+    </div>
+    <div class="tickets-block row d-flex no-gutters">
+      <div class="col">
+        <div class="card" style="width: 367px;">
+          <div class="card-body">
+            <h5 class="card-title">Family Pass</h5>
+            <p class="card-text text-medium">For up to 5 people</p>
+            <button type="button" class="ticket text-large">
+              <img src="assets/img/cart.svg"/>
+              Buy
+              <span>$4000</span>
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 367px;">
+          <div class="card-body">
+            <h5 class="card-title">Family Pass</h5>
+            <p class="card-text text-medium">For up to 5 people</p>
+            <button type="button" class="ticket text-large">
+              <img src="assets/img/cart.svg"/>
+              Buy
+              <span>$4000</span>
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 367px;">
+          <div class="card-body">
+            <h5 class="card-title">Family Pass</h5>
+            <p class="card-text text-medium">For up to 5 people</p>
+            <button type="button" class="ticket text-large">
+              <img src="assets/img/cart.svg"/>
+              Buy
+              <span class="text-large">$4000</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="chevron-container">
+        <img src="assets/img/chevron-left.svg"/>
+        <img src="assets/img/chevron-right.svg"/>
+        <img src="assets/img/hand.svg"/>
+      </div>
+    </div>
+  </div> -->
+  <!-- tickets block -->
+
+  <!-- covid block -->
+  <!-- <div class="container-fluid p-0">
+    <div class="tickets-block row d-flex no-gutters">
+      <div class="col-10">
+        <h6>Covid Information</h6>
+        <h2>How we're Keeping You Safe</h2>
+        <p>Check out our variety of Seasonal and Day passes to find what works best for you</p>
+      </div>
+      <div class="col-2">
+        <img src="assets/img/snowflakes.svg"/>
+      </div>
+    </div>
+    <div class="tickets-block row d-flex no-gutters">
+      <div class="col">
+        <div class="card" style="width: 185px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 185px; height:185px; object-fit: cover; border-radius: 100%;"/>
+          <div class="card-body">
+            <h5 class="card-title">Feeling Sick?</h5>
+            <p class="card-text text-medium">If you’re feeling sick, please refrain from visiting our resort.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 185px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 185px; height:185px; object-fit: cover; border-radius: 100%;"/>
+          <div class="card-body">
+            <h5 class="card-title">Feeling Sick?</h5>
+            <p class="card-text text-medium">If you’re feeling sick, please refrain from visiting our resort.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 185px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 185px; height:185px; object-fit: cover; border-radius: 100%;"/>
+          <div class="card-body">
+            <h5 class="card-title">Feeling Sick?</h5>
+            <p class="card-text text-medium">If you’re feeling sick, please refrain from visiting our resort.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 318px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 318px; height:318px; object-fit: cover; border-radius: 100%;"/>
+        </div>
+        <div class="card" style="width: 185px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 185px; height:185px; object-fit: cover; border-radius: 100%;"/>
+          <div class="card-body">
+            <h5 class="card-title">Feeling Sick?</h5>
+            <p class="card-text text-medium">If you’re feeling sick, please refrain from visiting our resort.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 185px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 185px; height:185px; object-fit: cover; border-radius: 100%;"/>
+          <div class="card-body">
+            <h5 class="card-title">Feeling Sick?</h5>
+            <p class="card-text text-medium">If you’re feeling sick, please refrain from visiting our resort.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 185px; border:none;">
+          <img src="assets/img/dining-img.jpg" style="width: 185px; height:185px; object-fit: cover; border-radius: 100%;"/>
+          <div class="card-body">
+            <h5 class="card-title">Feeling Sick?</h5>
+            <p class="card-text text-medium">If you’re feeling sick, please refrain from visiting our resort.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- covid block -->
+
+    <!-- footer block -->
+    <!-- <div class="container-fluid p-0">
+      <div class="footer-block row d-flex no-gutters">
+        <div class="col-10">
+          <h3>Hope to see you on the slopes soon!</h3>
+        </div>
+        <div class="col-2">
+          <img src="assets/img/snowboarder.svg"/>
+        </div>
+      </div>
+      <div class="footer-block row d-flex no-gutters">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Stay Connected</h4>
+            <p class="card-text text-large">Stay up to date on promos, announcements, and weather information.</p>
+            <button type="button" class="subscribe">
+              <input type="text" placeholder="Email"></input>
+              <input type="submit" value="Subscribe"></submit>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-block row d-flex no-gutters">
+        <ul class="nav footer-nav">
+          <div class="container-fluid">
+            <div class="row">
+              <div>
+                <ul class="nav footer">
+                  <li>
+                    <h5>Customer Support</h5>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Refunds/Cancellations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Covid Information</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live Chat</a>
+                  </li>
+                </ul>
+                <ul class="nav footer">
+                  <li>
+                    <h5>Quick Links</h5>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tickets/Passes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rentals/Lessons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dining/Resorts</a>
+                  </li>
+                </ul>
+                <ul class="nav footer">
+                  <li>
+                    <h5>Contact Us</h5>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/pin.svg"/>
+                      123 Snow Mountain Lane, Snow Town
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/call-phone.svg"/>
+                      1-905-633-3564
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/mail.svg"/>
+                      info@snowmountain.ca
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search" aria-hidden="true"></i> Search </button>
-        </form>
-    </div>
-</nav>
-<div class="alert alert-primary" role="alert">
-    This is a primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    This is a secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    This is a success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    This is a danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    This is a warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    This is a info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    This is a light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    This is a dark alert—check it out!
-  </div>
-
-<main role="main" class="container">
-    <div class="jumbotron text-center">
-        <img src="assets/img/logo.png"/>
-        <h1>Bootstrap 4 Starter Template</h1>
-        <p class="lead">This example is a quick bootstrap starter template.</p>
-        <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" role="button" target="_blank">View Bootstrap 4.5 Docs &raquo;</a>
-    </div>
-</main>
+      </div>
+    </div> -->
+    <!-- footer block -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
