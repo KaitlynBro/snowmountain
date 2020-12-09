@@ -10,6 +10,41 @@
     right: 139px;
 }
 
+@mixin h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $dark-blue;
+    letter-spacing: 0.5;
+    line-height: 110%;
+    &:not(.no-cap) {
+        text-transform: uppercase;
+    }
+}
+
+@mixin h4 {
+    font-size: 1.5rem;
+    color: $white;
+    font-weight: 600;
+    line-height: 26.4px;
+}
+
+
+@mixin h5 {
+    font-size: 1.25rem;
+    line-height: 120%;
+    letter-spacing: -3%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin h6 {
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: 11%;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
 @mixin button {
     background: $red;
     border-radius: 100px;
@@ -34,12 +69,30 @@
 
 @mixin ticketButton {
     border-radius: 0;
-    background-color: $white;
-    color: $dark-blue;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     border:unset;
+    display: flex;
+    align-items: center;
+    width: 166.2px;
+    padding:0;
+    div:first-of-type {
+        background-color: $white;
+        color: $dark-blue;
+        width: 100px;
+        padding: 5px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    div:nth-child(2) {
+        background-color: $dark-blue;
+        color: $white;
+        width: 65px;
+        padding: 5px 0;
+    }
     span {
         background-color: $dark-blue;
         color: $white;

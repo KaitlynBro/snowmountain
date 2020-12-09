@@ -25,7 +25,7 @@ h1 {
     // 48px
 }
 h2 {
-    font-size: 2rem;
+    @include h2;
     // 32px
 }
 
@@ -35,17 +35,18 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    @include h4;
     // 24px
 }
 
 h5 {
-    font-size: 1.25rem;
+    @include h5;
     // 20px
 }
 
 h6 {
-    font-size: 1rem;
+    @include h6;
+    
     // 16px
 }
 
@@ -114,6 +115,7 @@ h6 {
         height: 165px;
         box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
         width: 400px;
+        padding-left: 20px;
         .col {
             display: flex;
             align-items: center;
@@ -121,9 +123,6 @@ h6 {
             width: 30%;
             height: 80%;
             justify-content: center;
-            &:not(:last-child) {
-                padding: 0 20px;
-            }
             &.divider {
                 border-right:1px solid $white;
             }
@@ -152,10 +151,217 @@ h6 {
         height: 100%;
         object-fit: cover;
     }
-}
-
-.tickets-block {
-    button.ticket {
-        @include ticketButton;
+    p {
+        color: $dark-blue;
+    }
+    .text-wrapper {
+        max-width: 580px;
     }
 }
+
+.tickets-container {
+    background-color: $offwhite;
+    padding: 106px 0 0 126px;
+    position: relative;
+    h6, p {
+        color: $dark-blue;
+    }
+    img.snowflake {
+        position: absolute;
+        top: 21px;
+        right: 21px;
+        transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0);
+    }
+    .tickets-block {
+        button.ticket {
+            @include ticketButton;
+        }
+    }
+    .snowflake {
+        position: relative;
+        img {
+            position: absolute;
+            left: 90.74%;
+            right: 1.67%;
+            top: 49.27%;
+            bottom: 47.19%;
+            box-sizing: border-box;
+        transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0);
+        }
+    }
+    .cards-wrapper {
+        padding-top: 50px;
+        .card {
+            border: none;
+            max-width: 252px;
+            width: 252px;
+            margin-right:25px;
+            .card-title {
+                background-color: $red;
+                margin: 0;
+                color: $white;
+                text-align: center;
+                min-height: 37px;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+            }
+            .card-body {
+                background-color: $light-blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .chevron-container {
+        margin: 41px 0 20px 0;
+    }
+}
+
+// covid block
+.covid-container {
+    background-color: $dark-blue;
+    padding: 106px 0;
+    position: relative;
+    .covid-intro {
+        padding-left: 126px;
+    }
+    .covid-info .col {
+        justify-content: space-evenly;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 28%;
+            background: $light-blue;
+            width: 90%;
+            z-index: 0;
+            margin: 0 auto;
+            height:3px;
+        }
+    }
+    .card {
+        background-color: unset;
+        width: 200px;
+        border: unset;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        z-index: 10;
+        &.large {
+            width: 170px;
+            height: 170px;
+            margin-top: -10px;
+            .card-top {
+                width: 170px;
+            height: 170px;
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+        .card-top {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $light-blue;
+            border-radius: 100px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .card-body {
+            padding: 0;
+            margin-top: 20px;
+            h5 {
+                color: $white;
+                font-weight: 600;
+            }
+        }
+    }
+    h6, h2, p {
+        color: $white;
+    }
+    img.snowflake {
+        position: absolute;
+        top: 21px;
+        right: 21px;
+        width: 140px;
+        transform: matrix(0.93, 0.41, -0.37, 0.92, 0, 0);
+    }
+}
+// covid block
+
+// footer
+.footer-container {
+    background-color: $light-blue;
+    padding: 106px 0 0 126px;
+    position: relative;
+    color: $dark-blue;
+    h2 {
+        text-transform: unset;
+    }
+    img.snowboarder {
+        position: absolute;
+        top: 21px;
+        right: 0;
+        width: 200px;
+        // transform: rotate(6deg);
+    }
+    .email-bar {
+        width: 1000px;
+        background-color: $dark-blue;
+        border: 5px solid $white;
+        border-radius: 0;
+        margin-top: 34px;
+        p {
+            color: $white;
+        }
+        button {
+            border:none;
+            background: none;
+            padding: 0;
+        }
+        input:first-of-type {
+            width: 60%;
+            padding: 5px;
+            padding-left: 20px;
+            border: none;
+            margin-right: -10px;
+            border: none;
+            border-radius: 30px 0 0 30px;
+        }
+        input:nth-child(2) {
+            width: 40%;
+            background-color: $red;
+            color: $white;
+            height: 34px;
+            border-radius: 0 30px 30px 0;
+            border: none;
+        }
+    }
+    .footer-menu {
+        padding: 44px 0 51px;
+    }
+    .footer-nav {
+        display: flex;
+        h5 {
+            text-transform: unset;
+        }
+        a {
+            color: $dark-blue;
+            padding:0;
+            line-height: 35px;
+        }
+    }
+}
+// footer
