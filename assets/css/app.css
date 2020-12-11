@@ -10792,6 +10792,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Work Sans', sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -10870,7 +10872,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50px;
-  width: 200px;
+  width: 211px;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: -0.03em;
@@ -10892,6 +10894,29 @@ h6 {
   color: #fff;
 }
 
+.nav.secondary-nav .container-fluid, .nav.secondary-nav .container-sm, .nav.secondary-nav .container-md, .nav.secondary-nav .container-lg, .nav.secondary-nav .container-xl {
+  width: 97%;
+}
+
+.nav.secondary-nav .center {
+  margin-left: 15px;
+}
+
+.nav.secondary-nav .right ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.nav.secondary-nav .right ul li {
+  margin: 0 12px;
+}
+
 .nav.secondary-nav img.phone {
   width: 25px;
   height: 25px;
@@ -10902,6 +10927,19 @@ h6 {
   height: 150px;
 }
 
+.nav.primary-nav .container-fluid .row, .nav.primary-nav .container-sm .row, .nav.primary-nav .container-md .row, .nav.primary-nav .container-lg .row, .nav.primary-nav .container-xl .row {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.nav.primary-nav .container-fluid .row ul, .nav.primary-nav .container-sm .row ul, .nav.primary-nav .container-md .row ul, .nav.primary-nav .container-lg .row ul, .nav.primary-nav .container-xl .row ul {
+  padding: 0;
+}
+
+.nav.primary-nav .container-fluid .row ul li, .nav.primary-nav .container-sm .row ul li, .nav.primary-nav .container-md .row ul li, .nav.primary-nav .container-lg .row ul li, .nav.primary-nav .container-xl .row ul li {
+  margin: 0 13px;
+}
+
 .nav.primary-nav a.nav-link {
   color: #00478F;
   font-weight: 600;
@@ -10910,6 +10948,32 @@ h6 {
   line-height: 21.6px;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.mobile {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background-color: #CBEBF5;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.mobile ul.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mobile ul.nav li {
+  padding: 0 10px;
+}
+
+.mobile ul.nav li a {
+  color: #00478F;
 }
 
 .hero {
@@ -10975,6 +11039,25 @@ h6 {
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    background-position: center center;
+    height: 70vh;
+  }
+  .hero h1 {
+    display: none;
+  }
+  .hero .hero-bar {
+    bottom: 15%;
+    height: 105px;
+    border-radius: 0;
+  }
+  .hero .hero-bar .col img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .dining-block {
@@ -11301,4 +11384,60 @@ h6 {
   color: #00478F;
   padding: 0;
   line-height: 35px;
+}
+
+@media (max-width: 1199.98px) {
+  .dining-block {
+    height: unset;
+    padding: 30px;
+  }
+  .tickets-container {
+    padding: 30px;
+  }
+  .tickets-container img {
+    display: none;
+  }
+  .tickets-container .cards-wrapper {
+    padding-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tickets-container .cards-wrapper .card {
+    margin: 20px;
+  }
+  .covid-container .snowflake {
+    display: none;
+  }
+  .covid-container .covid-intro {
+    padding: 0 10px;
+  }
+  .covid-container .covid-info .col {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .covid-container .covid-info .col .card {
+    margin: 20px 0;
+  }
+  .covid-container .covid-info .col:after {
+    content: unset;
+  }
+  .footer-container {
+    padding: 20px;
+  }
+  .footer-container .snowboarder {
+    display: none;
+  }
+  .footer-container .nav.footer {
+    margin-top: 20px;
+  }
+  .footer-container .email-bar .btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
 }

@@ -18,55 +18,46 @@
   <ul class="nav secondary-nav d-flex">
     <div class="container-fluid">
       <div class="row">
-        <div class="col text-small text-xl-medium d-flex align-items-center">
+        <div class="col pr-0 text-small text-xl-medium d-flex align-items-center">
           <img src="assets/img/phoneSVG.svg" class="phone mr-2"/>
             905 - 674 - 9999
         </div>
-        <div class="col-sm col-lg-6 text-small text-xl-medium d-flex align-items-center justify-content-center">
+        <div class="col d-none d-xl-flex p-0 center text-small text-xl-medium align-items-center justify-content-center">
           <img src="assets/img/covid.svg" class="mr-2"/>
             Covid Information
         </div>
-        <div class="col d-flex align-items-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-4 text-small text-xl-medium d-flex align-items-center justify-content-end">
-                Hours
-              </div>
-              <div class="col-4 text-small text-xl-medium d-flex align-items-center justify-content-end">
-                Contact
-              </div>
-              <div class="col-4 text-small text-xl-medium d-flex align-items-center justify-content-end">
-                <img src="assets/img/sun.svg" class="mr-xl-2"/>
-                  -10
-                  <img src="assets/img/degree.svg" class="mb-2"/>
-                  C                                     
-              </div>
-            </div>
-          </div>
+        <div class="col right d-flex align-items-center">
+          <ul class="p-0 text-medium">
+            <li class="d-none d-xl-flex">Hours</li>
+            <li class="d-none d-xl-flex">Contact</li>
+            <li class="text-small text-xl-large"><img src="assets/img/sun.svg" class="mr-xl-2"/>
+              -10
+              <img src="assets/img/degree.svg" class="mb-2"/>
+              C </li>
+          </ul>
         </div>
-      </div>
     </div>
   </ul>
   <ul class="nav primary-nav d-flex align-items-center">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <div class="col d-flex justify-content-center">
             <img src="assets/img/snowmountainLogo.svg"/>       
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-center">
+        <div class="d-none d-xl-flex col col-xl-6 p-0 align-items-center justify-content-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active text-large" href="#">Tickets/Passes</a>
+              <a class="nav-link active text-small text-xl-large" href="#">Tickets/Passes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-large" href="#">Rentals/Lessons</a>
+              <a class="nav-link text-small text-xl-large" href="#">Rentals/Lessons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-large" href="#">Dining/Resort</a>
+              <a class="nav-link text-small text-xl-large" href="#">Dining/Resort</a>
             </li>
           </ul>
         </div>
-        <div class="col d-flex align-items-center justify-content-end">
+        <div class="col d-none d-xl-flex align-items-center justify-content-center">
           <button type="button" class="button">Season Passes</button>
         </div>
       </div>
@@ -101,11 +92,11 @@
   <!-- dining block -->
   <div class="container-fluid p-0">
     <div class="dining-block row d-flex no-gutters">
-      <div class="col">
+      <div class="col-12 col-lg-6">
         <img src="assets/img/dining-img.jpg"/>
       </div>
-      <div class="col d-flex justify-content-center align-items-center">
-        <div class="text-wrapper">
+      <div class="col-12 pt-5 pt-lg-0 col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="text-wrapper pl-lg-5 pl-xl-0">
           <h2 class="no-cap">Enjoy fine dining while <br> overlooking the mountains</h2>
           <p class="text-large">Bacon ipsum dolor amet cillum quis turducken tri-tip chuck leberkas lorem excepteur officia ad et capicola short loin in. Velit occaecat andouille </p>
           <button type="button" class="button">See menu</button>
@@ -126,7 +117,7 @@
       </div>
     </div>
     <div class="tickets-block row d-flex flex-column no-gutters">
-      <div class="col d-flex cards-wrapper">
+      <div class="col d-flex cards-wrapper flex-wrap flex-xl-nowrap">
         <div class="card">
           <h5 class="card-title">Family Pass</h5>
           <div class="card-body">
@@ -202,7 +193,7 @@
             </button>
           </div>
         </div>
-        <div class="card mr-0" style="width:5%">
+        <div class="card mr-0 d-none d-xl-flex" style="width:5%">
           <h5 class="card-title"></h5>
           <div class="card-body pr-0">
             <p class="card-text text-medium">Fo</p>
@@ -261,7 +252,7 @@
             <p class="card-text text-medium">Our staff is taking every precaution and constantly cleaning.</p>
           </div>
         </div>
-        <div class="card large">
+        <div class="card large d-none d-xl-flex">
           <div class="card-top">
             <img src="assets/img/Skis.svg"/>
           </div>
@@ -309,12 +300,12 @@
 
       <div class="footer-block row d-flex no-gutters">
         <div class="card email-bar">
-          <div class="card-body d-flex align-items-center">
-            <div class="col-9">
+          <div class="card-body d-flex flex-column flex-xl-row align-items-center">
+            <div class="col col-xl-9">
               <h4 class="card-title">Stay Connected</h4>
               <p class="card-text text-large">Stay up to date on promos, announcements, and weather information.</p>
             </div>
-            <div class="col-3 p-0">
+            <div class="col col-xl-3 p-0 btn-container">
               <button type="button" class="subscribe d-flex">
                 <input type="text" placeholder="Email"></input>
                 <input type="submit" value="Subscribe"></submit>
@@ -324,8 +315,8 @@
         </div>
       </div>
       <div class="footer-menu row d-flex no-gutters">
-        <div class="nav footer-nav d-flex">
-          <ul class="nav footer d-flex flex-column mr-3">
+        <div class="nav footer-nav d-flex flex-column flex-xl-row">
+          <ul class="nav footer d-flex flex-column mr-xl-3">
             <li>
               <h5>Customer Support</h5>
             </li>
@@ -339,7 +330,7 @@
               <a class="nav-link text-large" href="#">Live Chat</a>
             </li>
           </ul>
-          <ul class="nav footer d-flex flex-column mx-3">
+          <ul class="nav footer d-flex flex-column mx-xl-3">
             <li>
               <h5>Quick Links</h5>
             </li>
@@ -353,7 +344,7 @@
               <a class="nav-link text-large" href="#">Dining/Resorts</a>
             </li>
           </ul>
-          <ul class="nav footer d-flex flex-column mx-3">
+          <ul class="nav footer d-flex flex-column mx-xl-3">
             <li>
               <h5>Contact Us</h5>
             </li>
@@ -376,7 +367,7 @@
               </a>
             </li>
           </ul>
-          <ul class="nav footer d-flex flex-column mx-3">
+          <ul class="nav footer d-flex flex-column mx-xl-3">
             <li>
               <h5>Follow Us</h5>
             </li>
@@ -390,6 +381,21 @@
       </div>
     </div>
     <!-- footer block -->
+
+    <!-- mobile nav -->
+    <div class="mobile nav d-xl-none">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active text-small p-0" href="#">Tickets/Passes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-small p-0" href="#">Rentals/Lessons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-small p-0" href="#">Dining/Resort</a>
+        </li>
+      </ul>
+    </div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
