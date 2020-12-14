@@ -11053,6 +11053,10 @@ h6 {
   max-width: 580px;
 }
 
+.dining-block h2 {
+  width: 90%;
+}
+
 .tickets-container {
   background-color: #F7F7F7;
   padding: 106px 0 0 126px;
@@ -11394,6 +11398,9 @@ h6 {
 }
 
 @media (max-width: 1199.98px) {
+  .dining-block h2 {
+    width: 95%;
+  }
   .hero-bar {
     width: unset;
     height: unset;

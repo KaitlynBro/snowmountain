@@ -204,6 +204,9 @@ h6 {
     .text-wrapper {
         max-width: 580px;
     }
+    h2 {
+        width: 90%;
+    }
 }
 
 .tickets-container {
@@ -437,6 +440,9 @@ h6 {
 }
 
 @include media-breakpoint-down(lg) { 
+    .dining-block h2 {
+        width: 95%;
+    }
     .hero-bar {
         width: unset;
         height: unset;
