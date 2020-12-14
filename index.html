@@ -38,13 +38,13 @@
         </div>
     </div>
   </ul>
-  <ul class="nav primary-nav d-flex align-items-center">
+  <ul class="nav primary-nav d-none d-xl-flex align-items-center">
     <div class="container-fluid">
       <div class="row">
         <div class="col d-flex justify-content-center">
-            <img src="assets/img/snowmountainLogo.svg"/>       
+            <img src="assets/img/snowmountainLogo.svg"/>    
         </div>
-        <div class="d-none d-xl-flex col col-xl-6 p-0 align-items-center justify-content-center">
+        <div class="col col-xl-6 p-0 d-flex align-items-center justify-content-center">
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link active text-small text-xl-large" href="#">Tickets/Passes</a>
@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="col d-none d-xl-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center">
           <button type="button" class="button">Season Passes</button>
         </div>
       </div>
@@ -77,7 +77,7 @@
       
       <div class="col divider">
         <img src="assets/img/Map.svg"/>
-        <p class="text-small">Trail Maps</p>
+        <p class="text-small">Trails</p>
       </div>
       <div class="col">
         <img src="assets/img/phoneSVG.svg"/>
@@ -383,7 +383,21 @@
     <!-- footer block -->
 
     <!-- mobile nav -->
-    <div class="mobile nav d-xl-none">
+    <nav class="navbar mobile fixed-bottom d-xl-none">
+      <!-- <a class="navbar-brand m-0" href="#"><img src="assets/img/snowmountainLogo.svg"/></a> -->
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active text-small" href="#">Tickets/Passes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-small" href="#">Rentals/Lessons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-small" href="#">Dining/Resort</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <div class="mobile nav d-xl-none">
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active text-small p-0" href="#">Tickets/Passes</a>
@@ -395,7 +409,7 @@
           <a class="nav-link text-small p-0" href="#">Dining/Resort</a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

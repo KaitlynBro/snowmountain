@@ -10950,32 +10950,6 @@ h6 {
   padding-bottom: 0;
 }
 
-.mobile {
-  position: fixed;
-  bottom: 0;
-  z-index: 999;
-  background-color: #CBEBF5;
-  padding: 20px 0;
-  width: 100%;
-}
-
-.mobile ul.nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.mobile ul.nav li {
-  padding: 0 10px;
-}
-
-.mobile ul.nav li a {
-  color: #00478F;
-}
-
 .hero {
   background-image: url("../img/andrew-hughes.jpg");
   background-size: cover;
@@ -11386,7 +11360,45 @@ h6 {
   line-height: 35px;
 }
 
+.mobile {
+  background-color: #CBEBF5;
+}
+
+.mobile .navbar-brand {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile .navbar-brand img {
+  width: 200px;
+}
+
+.mobile ul.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mobile ul.nav a {
+  color: #00478F;
+  padding: 5px;
+}
+
 @media (max-width: 1199.98px) {
+  .hero-bar {
+    width: unset;
+    height: unset;
+    padding: 20px 5px;
+  }
   .dining-block {
     height: unset;
     padding: 30px;

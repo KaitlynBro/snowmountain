@@ -125,26 +125,6 @@ h6 {
     }
 }
 
-.mobile {
-    position: fixed;
-    bottom: 0;
-    z-index: 999;
-    background-color: $light-blue;
-    padding: 20px 0;
-    width: 100%;
-    ul.nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        li {
-            padding: 0 10px;
-            a {
-                color: $dark-blue;
-            }
-        }
-    }
-}
-
 // hero
 .hero {
     background-image: url('../img/andrew-hughes.jpg');
@@ -433,7 +413,35 @@ h6 {
 }
 // footer
 
+// mobile footer
+
+.mobile {
+    background-color: $light-blue;
+    .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 200px;
+        }
+    }
+    ul.nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        a {
+            color: $dark-blue;
+            padding: 5px;
+        }
+    }
+}
+
 @include media-breakpoint-down(lg) { 
+    .hero-bar {
+        width: unset;
+        height: unset;
+        padding: 20px 5px;
+    }
     .dining-block {
         height: unset;
         padding: 30px;
